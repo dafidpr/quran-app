@@ -1,31 +1,22 @@
-// import React from 'react';
-// import {useParams} from 'react-router-dom';
+import React from 'react'
 
-// function SurahDetail() {
-//     let {id} = useParams();
-//     return (
-//         <div>
-//             <h1>ID : {id}</h1>
-//         </div>
-//     )
-// }
-
-// export default SurahDetail
-import React, { Component } from 'react'
-
-export default class SurahDetail extends Component {
-    state = {
-        surah: null
-    }
-    componentDidMount(){
-        const {id} = this.props.match.params;
-        console.log(id);
-    }
-    render() {
-        return (
-            <div>
-                {/* <h1>ID : {id}</h1> */}
+function SurahDetail(props) {
+    return (
+        <div>
+            <div className="mt-3">
+                <div className="card shadow-sm">
+                    <div className="card-body">
+                        <p className="text-muted">{props.nomor_surat} : {props.nomor}</p>
+                        <h5 className="text-right mb-4">
+                            <strong>{props.arab}</strong>
+                        </h5>
+                        {/* <small>{props.translate}</small><br/> */}
+                        <small><i>{props.idn}</i></small>
+                    </div>
+                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default SurahDetail
