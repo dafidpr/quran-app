@@ -11,7 +11,13 @@ body{
 .card{
   border: 0;
 }
-
+.btn-default-custom{
+  border: 1px solid #6f7279;
+}
+.btn-default-custom:hover{
+  border: 1px solid #4980ff;
+  color: #4980ff;
+}
 
 .input-icon .form-control:not(:last-child) {
   padding-right: 2.5rem;
