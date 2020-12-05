@@ -19,7 +19,7 @@ export default class HomeComponent extends Component {
     render() {
         return (
             <div className="container">
-                <div className="card shadow-sm mt-5">
+                {/* <div className="card shadow-sm mt-5">
                     <div className="card-body">
                         <form className="input-icon">
                             <input type="search" className="form-control header-search" placeholder="Search&hellip;" />
@@ -28,7 +28,7 @@ export default class HomeComponent extends Component {
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> */}
                 <div className="row mt-5">
                     {
                         this.state.rowData.map(rowData => {

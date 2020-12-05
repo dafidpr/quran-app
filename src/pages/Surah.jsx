@@ -51,19 +51,6 @@ export default class Surah extends Component {
                        return <SurahDetail key={i} nomor_surat={this.state.detail.nomor} nomor={ayat.nomor} translate={ayat.tr} idn={ayat.idn} arab={ayat.ar}  />
                     })
                 }
-
-                <div className="card shadow-sm mt-3">
-                    <div className="card-body">
-                        <div className="container">
-                            <Switch>
-                                <div className="row">
-                                    <Link to={"/surah/" + Number(this.state.detail.nomor - 1)} className="btn btn-default-custom mr-2 "> <i className="fa fa-angle-double-left"></i> Back</Link>
-                                    <Link to={"/surah/" + Number(this.state.detail.nomor + 1)} className="btn btn-default-custom"> Next <i className="fa fa-angle-double-right"></i></Link>
-                                </div>
-                            </Switch>
-                        </div>
-                    </div>
-                </div>
             </div>
         )
     }
